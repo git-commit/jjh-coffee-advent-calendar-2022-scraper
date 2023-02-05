@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "johann-jakobs-haus-coffee-advent-calendar-2022-scraper"
+version = "0.1.0"
+description = ""
+authors = ["Maximilian Berger <max@geile.software>"]
+readme = "README.md"
+packages = [{include = "johann-jakobs-haus-coffee-advent-calendar-2022-scraper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.23.3"
+beautifulsoup4 = "^4.11.2"
+lxml = "^4.9.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+types-lxml = "^2022.11.8"
+types-beautifulsoup4 = "^4.11.6.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
